@@ -1,1 +1,2 @@
-wait
+node_modules
+.env
