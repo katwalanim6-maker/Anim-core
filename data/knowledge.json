@@ -1,1 +1,25 @@
-wait
+{
+  "name": "Anim Katwal",
+  "country": "Nepal",
+  "occupation": "Student",
+  "project": "Anim OS",
+  "interests": [
+    "Coding",
+    "Rock Music",
+    "Guitar",
+    "Technology",
+    "Business"
+  ],
+  "favoriteBands": [
+    "Metallica",
+    "AC/DC",
+    "Guns N' Roses",
+    "Queen",
+    "Sabin Rai",
+    "John Rai"
+  ],
+  "contact": {
+    "email": "katwalanim6@gmail.com",
+    "website": "https://katwalanim6-maker.github.io/info-share/"
+  }
+}
