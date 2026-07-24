@@ -21,15 +21,28 @@ app.get("/", (req, res) => {
     });
 });
 
-app.post("/chat", (req, res) => {
+app.post("/chat", async (req, res) => {
+    try {
+        const { message } = req.body;
 
-    const { message } = req.body;
+        const response = await ai.models.generateContent({
+            model: "gemini-2.5-flash",
+            contents: message
+        });
 
-    res.json({
-        reply: `Anim Core received: ${message}`
-    });
+        res.json({
+            reply: response.text
+        });
 
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).json({
+            reply: "Something went wrong while talking to Gemini."
+        });
+    }
 });
+
 
 const PORT = process.env.PORT || 3000;
 
