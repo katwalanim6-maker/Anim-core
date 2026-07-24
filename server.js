@@ -31,8 +31,8 @@ app.post("/chat", async (req, res) => {
         });
 
         res.json({
-            reply: response.text
-        });
+    reply: response.text || "Sorry bro, I couldn't generate a response."
+});
 
     } catch (error) {
         console.error(error);
