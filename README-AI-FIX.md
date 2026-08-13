@@ -1,0 +1,1 @@
+Anim Core serves the /chat endpoint used by the Animos frontend. Keep GEMINI_API_KEY configured only in the Render environment.
